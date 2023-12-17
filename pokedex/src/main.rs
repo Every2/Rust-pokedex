@@ -1,7 +1,6 @@
 use yew::prelude::*;
 
 
-
 #[function_component(App)]
 fn app() -> Html {
     html! {
@@ -20,6 +19,11 @@ fn app() -> Html {
                     placeholder="Name or number"
                 />
             </form>
+
+            <div class="buttons">
+                <button class="button btn-prev">{"Prev <"}</button>
+                <button class="button btn-next">{"Next >"}</button>
+            </div>
             <img src="./images/pokedex.png" alt="pokedex" class="pokedex" />
         </main>
     }
